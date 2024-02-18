@@ -23,7 +23,7 @@
     #blueButton {
         top: 25%;
         left: 50%;
-        transform: translate(-10%, -50%);
+        transform: translate(-50%, -50%);
         background-color: rgb(21, 96, 189);
     }
     #yellowButton {
@@ -43,7 +43,6 @@
   </style>
 </head>
 <body>
-  <body onload="hide()"></body>
   <button id="blueButton" onclick="toggleBlue()"></button>
   <button id="yellowButton" onclick="toggleYellow()"></button>
   <button id="returnButton", onclick="toggleReturn()"></button>
@@ -79,9 +78,6 @@
 
       toggleFullscreen()
 
-    }
-    function hide(){
-      window.scrollTo(0,1);
     }
     function toggleFullscreen() {
       const doc = window.document;
