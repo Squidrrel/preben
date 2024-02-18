@@ -43,6 +43,7 @@
   </style>
 </head>
 <body>
+  <body onload="hide()"></body>
   <button id="blueButton" onclick="toggleBlue()"></button>
   <button id="yellowButton" onclick="toggleYellow()"></button>
   <button id="returnButton", onclick="toggleReturn()"></button>
@@ -78,6 +79,9 @@
 
       toggleFullscreen()
 
+    }
+    function hide(){
+      window.scrollTo(0,1);
     }
     function toggleFullscreen() {
       const doc = window.document;
